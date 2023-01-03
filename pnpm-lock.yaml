@@ -1,0 +1,15 @@
+lockfileVersion: 5.4
+
+specifiers:
+  rescript: ^10.0.1
+
+devDependencies:
+  rescript: 10.0.1
+
+packages:
+
+  /rescript/10.0.1:
+    resolution: {integrity: sha512-XwO1GPDtoEU4H03xQE5bp0/qtSVR6YLaJRPxWKrfFgKc+LI36ODOCie7o9UJfgzQdoMYkkZyiTGZ4N9OQEaiUw==}
+    hasBin: true
+    requiresBuild: true
+    dev: true
