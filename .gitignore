@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *.exe
 *.obj
 *.out
@@ -26,3 +27,6 @@ lib/bs
 .bsb.lock
 /node_modules/
 lib
+=======
+node_modules/*
+>>>>>>> 6f440da (init monorepo project)
