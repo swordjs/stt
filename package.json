@@ -1,25 +1,4 @@
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-  "name": "sword-stt",
-  "version": "0.1.0",
-  "scripts": {
-    "clean": "rescript clean",
-    "build": "rescript build",
-    "watch": "rescript build -w"
-  },
-  "keywords": [
-    "ReScript"
-  ],
-  "author": "",
-  "license": "MIT",
-  "devDependencies": {
-    "rescript": "^10.0.1"
-  }
-}
-=======
-=======
->>>>>>> 6f440da (init monorepo project)
   "name": "@swordjs/stt",
   "type": "module",
   "version": "0.0.0",
@@ -89,7 +68,3 @@
     "*": "eslint --fix"
   }
 }
-<<<<<<< HEAD
->>>>>>> 6f440da (init monorepo project)
-=======
->>>>>>> 6f440da (init monorepo project)

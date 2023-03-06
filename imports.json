@@ -1,5 +1,0 @@
-{
-    "imports": {
-        "rescript/": "./node_modules/rescript/"
-    }
-}
