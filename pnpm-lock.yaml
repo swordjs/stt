@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 specifiers:
   rescript: ^10.0.1
 
@@ -15,6 +16,8 @@ packages:
     requiresBuild: true
     dev: true
 =======
+=======
+>>>>>>> 6f440da (init monorepo project)
 importers:
 
   .:
@@ -4541,4 +4544,7 @@ packages:
     resolution: {integrity: sha512-9bnSc/HEW2uRy67wc+T8UwauLuPJVn28jb+GtJY16iiKWyvmYJRXVT4UamsAEGQfPohgr2q4Tq0sQbQlxTfi1g==}
     engines: {node: '>=12.20'}
     dev: true
+<<<<<<< HEAD
+>>>>>>> 6f440da (init monorepo project)
+=======
 >>>>>>> 6f440da (init monorepo project)

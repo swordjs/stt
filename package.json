@@ -1,5 +1,6 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
   "name": "sword-stt",
   "version": "0.1.0",
   "scripts": {
@@ -17,6 +18,8 @@
   }
 }
 =======
+=======
+>>>>>>> 6f440da (init monorepo project)
   "name": "@swordjs/stt",
   "type": "module",
   "version": "0.0.0",
@@ -86,4 +89,7 @@
     "*": "eslint --fix"
   }
 }
+<<<<<<< HEAD
+>>>>>>> 6f440da (init monorepo project)
+=======
 >>>>>>> 6f440da (init monorepo project)
