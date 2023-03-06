@@ -5,4 +5,6 @@
 
 ## Stt
 
-Minimalist internationalization library for [node](https://nodejs.org/en/)/[deno](https://deno.land/manual@v1.29.1/introduction) platform. It provides a global scan translator and a tiny runtime, built with [Rescript](https://rescript-lang.org/docs/manual/latest/installation), provided by [Deno](https://deno.land/manual@v1.29.1/introduction). STT is mainly used in the nodejs cli program in [sword.js](https://github.com/swordjs/sword-framework), providing internationalization services for it.
+Stt refers broadly to a series of tools that consist of websites and plugins, all powered by ChatGpt, and are completely free for everyday use. You can use Stt-based products to translate your materials, including `Pdf`, `Docx`, etc.
+
+Likewise, Stt supports development tools, which can act as `Vscode plugins`, or `command line programsd` that can use translations in your favorite development tools, such as translating comments, etc.
