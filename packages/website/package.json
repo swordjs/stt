@@ -1,0 +1,21 @@
+{
+  "name": "@swordjs/stt-website",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/svelte": "^2.1.0",
+    "astro": "^2.1.0",
+    "svelte": "^3.54.0"
+  },
+  "devDependencies": {
+    "@unocss/reset": "^0.50.4",
+    "unocss": "^0.50.4"
+  }
+}
