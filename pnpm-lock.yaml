@@ -46,6 +46,12 @@ importers:
       vite: 4.1.4_@types+node@18.14.6
       vitest: 0.28.5
 
+  packages/vscode-extension:
+    specifiers:
+      '@types/vscode': ^1.69.0
+    devDependencies:
+      '@types/vscode': 1.76.0
+
   packages/website:
     specifiers:
       '@astrojs/svelte': ^2.1.0
@@ -1166,6 +1172,10 @@ packages:
   /@types/unist/2.0.6:
     resolution: {integrity: sha1-JQp7FsO5H2cqJFUuxkZ47rHToI0=}
     dev: false
+
+  /@types/vscode/1.76.0:
+    resolution: {integrity: sha512-CQcY3+Fe5hNewHnOEAVYj4dd1do/QHliXaknAEYSXx2KEHUzFibDZSKptCon+HPgK55xx20pR+PBJjf0MomnBA==}
+    dev: true
 
   /@types/yargs-parser/21.0.0:
     resolution: {integrity: sha512-iO9ZQHkZxHn4mSakYV0vFHAVDyEOIJQrV2uZ06HxEPcx+mt8swXoZHIbaaJ2crJYFfErySgktuTZ3BeLz+XmFA==}
