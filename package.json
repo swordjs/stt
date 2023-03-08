@@ -1,57 +1,21 @@
 {
-  "name": "@swordjs/stt",
-  "type": "module",
-  "version": "0.0.0",
-  "packageManager": "pnpm@7.12.0",
-  "description": "",
-  "author": "Seho",
-  "license": "MIT",
-  "homepage": "https://github.com/swordjs/stt",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/swordjs/stt.git"
-  },
-  "keywords": [],
-  "sideEffects": false,
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "require": "./dist/index.cjs",
-      "import": "./dist/index.mjs"
-    }
-  },
-  "main": "./dist/index.mjs",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
-  "typesVersions": {
-    "*": {
-      "*": [
-        "./dist/*",
-        "./dist/index.d.ts"
-      ]
-    }
-  },
-  "files": [
-    "dist"
-  ],
   "scripts": {
     "build": "unbuild",
     "dev": "unbuild --stub",
-    "lint": "eslint .",
+    "lint-staged": "lint-staged",
     "prepublishOnly": "nr build",
     "release": "bumpp && npm publish",
     "start": "esno src/index.ts",
-    "test": "vitest",
-    "typecheck": "tsc --noEmit"
+    "test": "vitest"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.35.3",
     "@antfu/ni": "^0.20.0",
     "@antfu/utils": "^0.7.2",
     "@types/node": "^18.14.1",
     "bumpp": "^9.0.0",
-    "eslint": "^8.34.0",
+    "eslint": "^7.32.0",
     "esno": "^0.16.3",
+    "husky": "^7.0.4",
     "lint-staged": "^13.1.2",
     "pnpm": "^7.27.1",
     "rimraf": "^4.1.2",
@@ -59,12 +23,11 @@
     "typescript": "^4.9.5",
     "unbuild": "^1.1.2",
     "vite": "^4.1.4",
-    "vitest": "^0.28.5"
-  },
-  "simple-git-hooks": {
-    "pre-commit": "pnpm lint-staged"
-  },
-  "lint-staged": {
-    "*": "eslint --fix"
+    "vitest": "^0.28.5",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-prettier": "^3.4.1",
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "@typescript-eslint/parser": "^4.33.0"
   }
 }
