@@ -1,0 +1,30 @@
+{
+  "name": "@swordjs/stt-server",
+  "version": "0.0.1",
+  "description": "this is a sword framework example",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "dev": "sword dev",
+    "dev:unicloud": "sword dev --platform=unicloud",
+    "build": "sword build",
+    "build:unicloud": "sword build --platform=unicloud",
+    "server": "cd ./.sword/build/server && node ./src/index.js",
+    "doc": "sword doc",
+    "share": "sword share"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@swordjs/h3": "0.7.6",
+    "@swordjs/sword-framework": "*"
+  },
+  "devDependencies": {
+    "@dcloudio/types": "^2.6.6",
+    "@swordjs/sword-framework-cli": "*",
+    "esbuild": "^0.14.27",
+    "esbuild-register": "^3.3.3"
+  }
+}
