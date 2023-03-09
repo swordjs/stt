@@ -1,4 +1,5 @@
 {
+  "name": "@swordjs/stt",
   "scripts": {
     "build": "unbuild",
     "dev": "unbuild --stub",
@@ -7,6 +8,9 @@
     "release": "bumpp && npm publish",
     "start": "esno src/index.ts",
     "test": "vitest"
+  },
+  "dependencies": {
+    "@vue/reactivity": "^3.2.47"
   },
   "devDependencies": {
     "@antfu/ni": "^0.20.0",
