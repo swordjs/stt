@@ -1,10 +1,12 @@
 {
-  "version": "0.0.0",
+  "name": "stt-translate",
+  "version": "0.0.1",
   "private": true,
   "license": "MIT",
   "main": "./lib/index.cjs",
   "files": [
-    "lib"
+    "lib",
+    "assets"
   ],
   "engines": {
     "vscode": "^1.69.0"
@@ -12,11 +14,35 @@
   "activationEvents": [
     "onStartupFinished"
   ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.translateGitMessage",
+        "title": "stt translate",
+        "icon": {
+          "light": "assets/translate_dark.png",
+          "dark": "assets/translate_light.png"
+        }
+      }
+    ],
+    "menus": {
+      "scm/title": [
+        {
+          "when": "scmProvider == git",
+          "command": "extension.translateGitMessage",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
   "scripts": {
     "dev": "nodemon --watch src/ -C -e ts --debug -x 'npm run build'",
     "build": "unbuild"
   },
   "devDependencies": {
     "@types/vscode": "^1.69.0"
+  },
+  "dependencies": {
+    "vscode-nls-i18n": "^0.2.4"
   }
 }
