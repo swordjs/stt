@@ -1,8 +1,11 @@
 {
   "name": "@swordjs/stt-core",
   "version": "0.0.1",
-  "private": true,
   "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "exports": {
     ".": {
       "types": "./lib/index.d.ts",
@@ -24,6 +27,8 @@
     "build": "unbuild"
   },
   "dependencies": {
+    "@swordjs/chatgpt": "^5.0.13",
+    "@swordjs/prompt-template": "workspace:*",
     "chatgpt": "^5.0.8",
     "dotenv": "^16.0.3"
   }

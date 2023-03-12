@@ -1,14 +1,19 @@
 {
   "compilerOptions": {
-    "target": "es2018",
+    "baseUrl": ".",
+    "target": "esnext",
     "module": "esnext",
-    "lib": ["esnext"],
     "moduleResolution": "node",
-    "esModuleInterop": true,
     "strict": true,
-    "strictNullChecks": true,
+    "jsx": "preserve",
+    "sourceMap": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
-    "skipDefaultLibCheck": true
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "paths": {
+      "#types/*": ["./typings/*"]
+    }
   }
 }

@@ -1,9 +1,12 @@
 {
   "name": "stt-translate",
   "version": "0.0.1",
-  "private": true,
   "license": "MIT",
   "main": "./lib/index.cjs",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "files": [
     "lib",
     "assets"
@@ -43,6 +46,7 @@
     "@types/vscode": "^1.69.0"
   },
   "dependencies": {
+    "@swordjs/stt-core": "workspace:*",
     "vscode-nls-i18n": "^0.2.4"
   }
 }
