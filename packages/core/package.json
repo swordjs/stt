@@ -27,9 +27,8 @@
     "build": "unbuild"
   },
   "dependencies": {
-    "@swordjs/chatgpt": "^5.0.13",
+    "@swordjs/chatgpt": "^5.0.17",
     "@swordjs/prompt-template": "workspace:*",
-    "chatgpt": "^5.0.8",
     "dotenv": "^16.0.3"
   }
 }

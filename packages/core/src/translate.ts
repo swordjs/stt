@@ -1,8 +1,11 @@
+import * as dotenv from 'dotenv';
 import { ChatGPTAPI } from '@swordjs/chatgpt';
 import { loadPromptTemplate } from '@swordjs/prompt-template';
 import path from 'path';
 import { ref } from '@vue/reactivity';
 import type { ChatCompletionRequestMessage } from '#types/openapi';
+
+dotenv.config({ path: path.resolve(__dirname, '../.env') });
 
 export const chatgptInstance = new ChatGPTAPI({
   apiKey: process.env.PUBLIC_API_KEY as string
