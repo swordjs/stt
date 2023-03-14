@@ -1,5 +1,8 @@
 {
-  "compilerOptions": {},
+  "compilerOptions": {
+    "module": "commonjs",
+    "outDir": "out"
+  },
   "include": ["src/**/*"],
   "extends": "../../tsconfig.json"
 }
