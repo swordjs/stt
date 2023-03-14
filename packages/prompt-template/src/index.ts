@@ -11,7 +11,6 @@ export async function loadPromptTemplate(path: string) {
     const saveCurrentMessage = () => {
       if (currentMessage) {
         currentMessage.content = currentMessage.content.trim();
-        currentMessage.content = currentMessage.content.replace('${OS}', os.platform());
         messages.push(currentMessage);
         currentMessage = null;
       }
