@@ -53,11 +53,11 @@ importers:
 
   packages/core:
     specifiers:
-      '@swordjs/chatgpt': ^5.0.17
+      '@swordjs/chatgpt': ^5.0.18
       '@swordjs/prompt-template': workspace:*
       dotenv: ^16.0.3
     dependencies:
-      '@swordjs/chatgpt': 5.0.17
+      '@swordjs/chatgpt': 5.0.18
       '@swordjs/prompt-template': link:../prompt-template
       dotenv: 16.0.3
 
@@ -1138,8 +1138,8 @@ packages:
       - supports-color
     dev: false
 
-  /@swordjs/chatgpt/5.0.17:
-    resolution: {integrity: sha512-LApHyxVSX174XjdSugwJO2+uP0IsjI/euwVK0ex6gun+F2elNz/qISgBzhwwjwUqazFSxl6hfIsIV+6VSkR0JQ==}
+  /@swordjs/chatgpt/5.0.18:
+    resolution: {integrity: sha512-2JvZhMzVE0XntgO056/fhWmiWwrme9W/j2n+SzwsaXdULHGEIl5XEFieXUT16SETune8hX78jPtoeZhRHkDd0A==}
     engines: {node: '>=14'}
     hasBin: true
     dependencies:
