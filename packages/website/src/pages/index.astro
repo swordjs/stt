@@ -1,14 +1,32 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Input from "../components/Input.svelte"
+import Output from "../components/Output.svelte"
 ---
 
 <Layout title="Welcome to Astro.">
-	<main class="flex">
-		<p>hello</p>
-		<p>world</p>
+	<main class="w-100vw h-100vh p-x-34px">
+		<header class=" p-t-40px p-b-34px flex items-center select-none">
+			<img src="./logo.svg" class="w-74.2px h-38px" alt="">
+			<div class="impact text-27px text-black ml-11.8px">Stt Translate</div>
+			<div class="al_bayan text-17px text-black ml-12px mt-1">Power by ChatGpt API </div>
+		</header>
+		<div class="wrapper flex justify-center">
+			<Input/>
+			<Output/>
+		</div>
 	</main>
 </Layout>
 
 <style>
+main{
+	background: linear-gradient(180deg, #88D3CE 0%, #6E45E2 100%);
+}
+.impact{
+	font-family: 'Impact';
+}
 
+.al_bayan{
+	font-family: 'Al Bayan';
+}
 </style>
