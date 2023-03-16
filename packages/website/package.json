@@ -15,6 +15,7 @@
     "svelte": "^3.54.0"
   },
   "devDependencies": {
+    "@unocss/core": "^0.50.5",
     "@unocss/reset": "^0.50.4",
     "unocss": "^0.50.4"
   }
