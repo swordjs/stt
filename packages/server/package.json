@@ -19,6 +19,8 @@
   "license": "ISC",
   "dependencies": {
     "@swordjs/h3": "0.7.6",
+    "@swordjs/stt-core": "workspace:*",
+    "@swordjs/sword-cors": "^1.1.1",
     "@swordjs/sword-framework": "*"
   },
   "devDependencies": {
