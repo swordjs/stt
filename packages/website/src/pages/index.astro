@@ -1,7 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Input from "../components/Input.svelte"
-import Output from "../components/Output.svelte"
+import Main from "../components/Main.svelte";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -11,10 +10,7 @@ import Output from "../components/Output.svelte"
 			<div class="impact text-27px text-black ml-11.8px">Stt Translate</div>
 			<div class="al_bayan text-17px text-black ml-12px mt-1">Power by ChatGpt API </div>
 		</header>
-		<div class="wrapper flex justify-center">
-			<Input/>
-			<Output/>
-		</div>
+		<Main client:idle></Main>
 	</main>
 </Layout>
 
