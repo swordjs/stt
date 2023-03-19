@@ -2,6 +2,7 @@
   "name": "@swordjs/stt",
   "scripts": {
     "build": "unbuild",
+    "build:website": "cd packages/website && npm run build",
     "dev": "unbuild --stub",
     "lint-staged": "lint-staged",
     "prepublishOnly": "nr build",
@@ -21,6 +22,7 @@
     "@typescript-eslint/eslint-plugin": "^4.33.0",
     "@typescript-eslint/parser": "^4.33.0",
     "bumpp": "^9.0.0",
+    "dotenv": "^16.0.3",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.25.4",
