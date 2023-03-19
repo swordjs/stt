@@ -1,6 +1,6 @@
 {
   "name": "@swordjs/stt-core",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "publishConfig": {
     "access": "public",
@@ -17,7 +17,8 @@
   "module": "./lib/index.mjs",
   "types": "./lib/index.d.ts",
   "files": [
-    "lib"
+    "lib",
+    "prompt"
   ],
   "activationEvents": [
     "onStartupFinished"
@@ -27,7 +28,7 @@
     "build": "unbuild"
   },
   "dependencies": {
-    "@swordjs/chatgpt": "^5.0.18",
+    "@swordjs/chatgpt": "^5.0.19",
     "@swordjs/prompt-template": "workspace:*",
     "dotenv": "^16.0.3"
   }
