@@ -18,10 +18,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@swordjs/chatgpt": "^5.0.20",
     "@swordjs/h3": "0.7.6",
-    "@swordjs/stt-core": "workspace:*",
+    "@swordjs/prompt-template": "workspace:^0.0.1",
     "@swordjs/sword-cors": "^1.1.1",
-    "@swordjs/sword-framework": "*"
+    "@swordjs/sword-framework": "*",
+    "dotenv": "^16.0.3"
   },
   "devDependencies": {
     "@dcloudio/types": "^2.6.6",

@@ -55,34 +55,28 @@ importers:
       vite: 4.1.4_@types+node@18.14.6
       vitest: 0.28.5
 
-  packages/core:
-    specifiers:
-      '@swordjs/chatgpt': ^5.0.19
-      '@swordjs/prompt-template': workspace:*
-      dotenv: ^16.0.3
-    dependencies:
-      '@swordjs/chatgpt': 5.0.19
-      '@swordjs/prompt-template': link:../prompt-template
-      dotenv: 16.0.3
-
   packages/prompt-template:
     specifiers: {}
 
   packages/server:
     specifiers:
       '@dcloudio/types': ^2.6.6
+      '@swordjs/chatgpt': ^5.0.20
       '@swordjs/h3': 0.7.6
-      '@swordjs/stt-core': workspace:*
+      '@swordjs/prompt-template': workspace:^0.0.1
       '@swordjs/sword-cors': ^1.1.1
       '@swordjs/sword-framework': '*'
       '@swordjs/sword-framework-cli': '*'
+      dotenv: ^16.0.3
       esbuild: ^0.14.27
       esbuild-register: ^3.3.3
     dependencies:
+      '@swordjs/chatgpt': 5.0.20
       '@swordjs/h3': 0.7.6
-      '@swordjs/stt-core': link:../core
+      '@swordjs/prompt-template': link:../prompt-template
       '@swordjs/sword-cors': 1.1.1
       '@swordjs/sword-framework': 1.4.1
+      dotenv: 16.0.3
     devDependencies:
       '@dcloudio/types': 2.6.12
       '@swordjs/sword-framework-cli': 1.7.2
@@ -91,11 +85,9 @@ importers:
 
   packages/vscode-extension:
     specifiers:
-      '@swordjs/stt-core': workspace:*
       '@types/vscode': ^1.69.0
       vscode-nls-i18n: ^0.2.4
     dependencies:
-      '@swordjs/stt-core': link:../core
       vscode-nls-i18n: 0.2.4
     devDependencies:
       '@types/vscode': 1.76.0
@@ -1148,8 +1140,8 @@ packages:
       - supports-color
     dev: false
 
-  /@swordjs/chatgpt/5.0.19:
-    resolution: {integrity: sha512-26iRMedmhJP5maoiPu8wcYZ06TCDAX+8Z72eRjf9G0+6IH8jEpO98obPXJStfoa6qjoScbJLaPs1aVBqNFz07w==}
+  /@swordjs/chatgpt/5.0.20:
+    resolution: {integrity: sha512-bWRJFZsxQIrYLuvybb0b77QJ0PXNpP9xAfdDBN4UkGSW72/REm1YHz9udcpaQAP/+2FDUiDG1N98bQwwyzKJwA==}
     engines: {node: '>=14'}
     hasBin: true
     dependencies:
@@ -1161,7 +1153,10 @@ packages:
       conf: 11.0.1
       eventsource-parser: 0.0.5
       keyv: 4.5.2
+      node-fetch: 2.6.9
       uuid: 9.0.0
+    transitivePeerDependencies:
+      - encoding
     dev: false
 
   /@swordjs/esbuild-plugin-condition-comment-macro/1.0.1:
@@ -5109,6 +5104,18 @@ packages:
     resolution: {integrity: sha512-KIkvH1jl6b3O7es/0ShyCgWLcfXxlBrLBbP3rOr23WArC66IMcU4DeZEeYEOwnopYhawLTn7/y+YtmASe8DFVQ==}
     dev: true
 
+  /node-fetch/2.6.9:
+    resolution: {integrity: sha512-DJm/CJkZkRjKKj4Zi4BsKVZh3ValV5IR5s7LVZnW+6YMh0W1BfNA8XSs6DLMGYlId5F3KnA70uu2qepcR08Qqg==}
+    engines: {node: 4.x || >=6.0.0}
+    peerDependencies:
+      encoding: ^0.1.0
+    peerDependenciesMeta:
+      encoding:
+        optional: true
+    dependencies:
+      whatwg-url: 5.0.0
+    dev: false
+
   /node-releases/2.0.10:
     resolution: {integrity: sha512-5GFldHPXVG/YZmFzJvKK2zDSzPKhEp0+ZR5SVaoSag9fsL5YgHbUHDfnG5494ISANDcK4KwPXAx2xqVEydmd7w==}
 
@@ -6372,6 +6379,10 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
+  /tr46/0.0.3:
+    resolution: {integrity: sha1-gYT9NH2snNwYWZLzpmIuFLnZq2o=}
+    dev: false
+
   /trim-lines/3.0.1:
     resolution: {integrity: sha512-kRj8B+YHZCc9kQYdWfJB2/oUl9rA99qbowYYBtr4ui4mZyAQ2JpvVBd/6U2YloATfqBhBTSMhTpgBHtU0Mf3Rg==}
     dev: false
@@ -7005,6 +7016,17 @@ packages:
 
   /web-namespaces/2.0.1:
     resolution: {integrity: sha512-bKr1DkiNa2krS7qxNtdrtHAmzuYGFQLiQ13TsorsdT6ULTkPLKuu5+GsFpDlg6JFjUTwX2DyhMPG2be8uPrqsQ==}
+    dev: false
+
+  /webidl-conversions/3.0.1:
+    resolution: {integrity: sha1-JFNCdeKnvGvnvIZhHMFq4KVlSHE=}
+    dev: false
+
+  /whatwg-url/5.0.0:
+    resolution: {integrity: sha1-lmRU6HZUYuN2RNNib2dCzotwll0=}
+    dependencies:
+      tr46: 0.0.3
+      webidl-conversions: 3.0.1
     dev: false
 
   /when-exit/2.1.0:
