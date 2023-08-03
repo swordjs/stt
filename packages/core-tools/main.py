@@ -8,9 +8,9 @@ from openai2 import Chat
 @click.option("--m", prompt="Your model", help="Openai model", default="gpt-3.5-turbo", envvar="OPENAI_MODEL")
 @click.option("--t", prompt="Your temperature", help="Openai temperature", default=0.2, envvar="OPENAI_TEMPERATURE")
 @click.option("--f", prompt="Fragment size (in string length)", help="Fragment size", default=2048, envvar="OPENAI_FRAGMENT_SIZE")
-def main(key, model, temperature, fragment_size):
+def main(k, m, t, f):
     """ stt command line core tools """
-    chat_main = Chat(api_key=key, model=model, temperature=temperature)
+    chat_main = Chat(api_key=k, model=m, temperature=t)
     with open("src/prompt/default.txt", "r") as f:
         prompt = f.read()
     prompt = prompt.replace("{{targetLanguage}}", "German")
