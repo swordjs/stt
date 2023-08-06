@@ -1,7 +1,8 @@
 
-<video width="300" height="200" >
-    <source src="https://static.yinzhuoei.com/typecho/2023/08/06/308171454913802/Jietu20230806-220642-HD.mp4" type="video/mp4"></source>
-</video>
+
+
+https://github.com/swordjs/stt/assets/35763284/369c172e-f39d-4947-98ab-56f862abe016
+
 
 Stt refers broadly to a series of tools that consist of websites and plugins, all powered by ChatGpt, and are completely free for everyday use. You can use Stt-based products to translate your materials, including `Pdf`, `Docx`, `Markdown`, etc.
 
