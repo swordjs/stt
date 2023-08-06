@@ -1,7 +1,9 @@
 
 
 
-https://github.com/swordjs/stt/assets/35763284/369c172e-f39d-4947-98ab-56f862abe016
+
+https://github.com/swordjs/stt/assets/35763284/518650a5-d226-4062-8703-effd435baa96
+
 
 
 Stt refers broadly to a series of tools that consist of websites and plugins, all powered by ChatGpt, and are completely free for everyday use. You can use Stt-based products to translate your materials, including `Pdf`, `Docx`, `Markdown`, etc.
